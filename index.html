@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NUESTROS RECUERDOS 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Bowlby+One+SC&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo-principal">NUESTROS RECUERDOS 2025</h1>
+    
+    <canvas id="heartCanvas"></canvas>
+    <div id="container"></div>
+
+    <div id="playlist-icon">🎵</div>
+    <div id="playlist-menu" class="hidden">
+        <ul id="audio-list">
+            <li data-src="audio/teamo♥.ogg">teamo♥</li>
+            <li data-src="audio/♥ iloveu♥.ogg">♥ iloveu♥</li>
+            <li data-src="audio/♥ Koi no yokan♥.ogg">♥ Koi no yokan♥</li>
+            <li data-src="audio/dan-shin-i yo-a-yo.ogg">dan-shin-i yo-a-yo</li>
+            <li data-src="audio/我爱你.ogg">我爱你</li>
+        </ul>
+    </div>
+
+    <div id="modal" class="hidden">
+        <div class="card" id="cardContainer">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div id="mediaContainer"></div>
+                    <button id="btnLeeme">LÉEME</button>
+                </div>
+                <div class="card-back">
+                    <p id="modalText"></p>
+                    <button id="btnCerrar">CERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="mainAudio" loop></audio>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+          }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
+
+
+
